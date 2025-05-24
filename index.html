@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">Nihal Akndo</div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hamburger Navigation -->
+  <nav id="hamburger-nav">
+    <div class="logo">Nihal Akndo</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu-links" id="mobileMenu">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Add your sections below (about, projects, contact) -->
+  <section id="profile">
+  <div class="section__pic-container">
+    <img src="./assets/profile-pic.png" alt="Nihal Akndo profile picture" />
+  </div>
+  
+  <div class="section__text">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="title">Nihal Akndo</h1>
+    <p class="section__text__p2">Machine Learning Engineer.</p>
+    
+    <div class="btn-container">
+      <button class="btn btn-color-2" onclick="window.open('./assets/nihals-resume.pdf')">
+        Download Resume
+      </button>
+      <button class="btn btn-color-1" onclick="location.href='#contact'">
+        Contact Me
+      </button>
+    </div>
+
+    <div id="social-container">
+      <img
+        src="./assets/linkedin.png"
+        alt="My LinkedIn"
+        class="icon"
+        onclick="location.href='https://www.linkedin.com/in/nihal-akndo-754192251/'"
+      />
+      <img
+        src="./assets/github.png"
+        alt="My GitHub"
+        class="icon"
+        onclick="location.href='https://github.com/Nihal473'"
+      />
+    </div>
+  </div>
+</section>
+  <section id="about">
+    <p class="section__text__p1">get to know more</p>
+    <h1 class="title">About me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture"
+        class="about-pic" 
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-container">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="experience" />
+            <h3>Experience</h3>
+            <p>1+ year <br/>Solving Problems Using Machine Learning </p>
+            <p>3+ year <br/>Solving Problems Using different Programming Languages</p>
+          </div>
+          <div class-="details-container">
+            <img src="./assets/education.png" alt="education" />
+            <h3>Education</h3>
+            <p>Self-Taught Programmer<br/>via Online Courses & Resources</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">...</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
