@@ -42,20 +42,3 @@ for (let i = 0; i < 100; i++) {
 
   dotContainer.appendChild(dot);
 }
-
-const cursor = document.getElementById("cursor");
-const navLinks = document.querySelectorAll("nav a");
-
-document.addEventListener("mousemove", (e) => {
-  cursor.style.top = `${e.clientY}px`;
-  cursor.style.left = `${e.clientX}px`;
-});
-
-navLinks.forEach(link => {
-  link.addEventListener("mouseenter", () => {
-    cursor.classList.add("cursor-hover");
-  });
-  link.addEventListener("mouseleave", () => {
-    cursor.classList.remove("cursor-hover");
-  });
-});
