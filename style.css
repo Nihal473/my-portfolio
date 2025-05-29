@@ -112,7 +112,6 @@ a {
 /* Hamburger Navigation (Hidden by default) */
 #hamburger-nav {
   display: none;
-  display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
