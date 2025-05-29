@@ -36,19 +36,8 @@ It's a space to showcase my projects, skills, and a little bit about who I am as
 
 ---
 
-
-## 📁 File Structure
-
-
-📁 portfolio-website/
-├── index.html
-├── style.css
-├── script.js
-└── mediaqueries.css
-└── assets/
-
 🌍 Live Demo
 You can check it out here:
-🔗 cooming soon
+🔗 coming soon
 
 
